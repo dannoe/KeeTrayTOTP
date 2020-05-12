@@ -15,13 +15,13 @@ jobs:
 
     - name: Install xvfb-run
       run: sudo apt -y install xvfb
-    
-    - name: nuget restore
-      run: nuget restore KeeTrayTOTP.sln
 
     - name: Download nuget.exe
       run: wget https://dist.nuget.org/win-x86-commandline/latest/nuget.exe 
-      
+
+    - name: nuget restore
+      run: nuget restore KeeTrayTOTP.sln
+
     - name: nuget restore
       run: mono nuget.exe restore
 
