@@ -46,7 +46,7 @@ namespace KeeTrayTOTP.Menu
 
         public override ToolStripMenuItem ProvideMenuItem()
         {
-            return null;
+            return new ToolStripMenuItem();
         }
 
         private void OnTrayContextMenuOpened(object sender, EventArgs e)
